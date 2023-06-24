@@ -8,7 +8,7 @@ function Footer() {
         (TCMB).
       </p>
       <p>
-        <strong>Note</strong> Data Updated Through June 2023
+        <strong>Note</strong> Data Updated Through June 2023 <>v2</>
       </p>
 
       <p></p>
