@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
+
+  background-color: rgb(200, 157, 101);
 }
 
 .App-logo {
@@ -35,4 +42,159 @@
   to {
     transform: rotate(360deg);
   }
+}
+.header {
+  padding: 20px;
+}
+.main {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main_firstselection,
+.main_lastselection {
+  width: 30%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.main_firstselection input,
+.main_lastselection input {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2px;
+}
+
+.main_currency {
+}
+.main_currency select {
+  border-radius: 20%;
+  background-color: #168416;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+.main_currency select:hover {
+  background-color: #177029;
+  transform: scale(1.1);
+}
+
+.main_button button {
+  background-color: #2253b5;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+.main_button button:hover {
+  background-color: #1e47a1;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #282c34;
+  color: rgb(209, 198, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: larger;
+  padding: 12px;
+  text-align: center;
+}
+.footer a {
+  color: rgb(209, 198, 198);
+  text-decoration: none;
+}
+
+.main_result {
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-table {
+  margin-top: 20px;
+  width: 64vw;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.result-table th,
+.result-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+.ascending {
+  cursor: n-resize;
+}
+.descending {
+  cursor: s-resize;
+}
+
+.result-table th {
+  background-color: #222;
+}
+.result-table tr:nth-child(odd) {
+  background-color: #444 !important;
+}
+
+.result-table tr:nth-child(even) {
+  background-color: #555 !important;
+}
+
+.result-table tr:hover {
+  background-color: #938c8c !important;
+}
+
+.result-table td:first-child {
+  border-left: none;
+}
+
+.result-table td:last-child {
+  border-right: none;
+}
+span {
+  color: white;
+  font-weight: bold;
+
+  background-color: #2253b5;
+  border: 3px solid #2253b5;
+  border-radius: 20%;
+}
+
+.main-middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  margin-left: 10px;
+  margin-right: 10px;
 }
