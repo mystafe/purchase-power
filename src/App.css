@@ -1,17 +1,13 @@
 .App {
+  font-size: x-small;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100vh;
 
   background-color: rgb(200, 157, 101);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 80vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,72 +16,51 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .header {
-  padding: 20px;
+  width: 80vw;
 }
 .main {
-  width: 100%;
-  padding: 20px;
+  width: 80vw;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+
   flex-wrap: wrap;
 }
 .main_firstselection,
 .main_lastselection {
-  width: 30%;
+  width: 20%;
   margin: 0px;
   display: flex;
   flex-direction: column;
 }
 .main_firstselection input,
 .main_lastselection input {
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 10px;
+  border-radius: 5px;
+  font-size: 9px;
+  padding: 2px;
   font-weight: bold;
   text-align: center;
-  margin: 2px;
+  margin-bottom: 2px;
 }
 
-.main_currency {
-}
 .main_currency select {
-  border-radius: 20%;
+  border-radius: 25%;
   background-color: #168416;
   border: none;
   width: 100%;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 9px;
+  font-weight: normal;
   text-align: center;
-  padding: 10px;
+  padding: 3px;
   cursor: pointer;
   color: white;
+  margin-right: 6px;
 }
 .main_currency select:hover {
   background-color: #177029;
@@ -94,13 +69,13 @@
 
 .main_button button {
   background-color: #2253b5;
-  margin: 5px;
-  margin-top: 10px;
+  margin: 2px;
   border-radius: 5px;
   color: white;
-  font-size: 20px;
+  font-size: 9px;
   font-weight: bold;
-  padding: 5px;
+  padding: 3px;
+  width: 90%;
   cursor: pointer;
 }
 .main_button button:hover {
@@ -109,7 +84,7 @@
 }
 
 .footer {
-  width: 100%;
+  width: 80vw;
   background-color: #282c34;
   color: rgb(209, 198, 198);
   display: flex;
@@ -121,7 +96,7 @@
 .footer p {
   margin: 0;
   font-size: larger;
-  padding: 12px;
+  padding: 2px;
   text-align: center;
 }
 .footer a {
@@ -141,23 +116,16 @@
 
 .result-table {
   margin-top: 20px;
-  width: 64vw;
+  width: 80vw;
   border-collapse: collapse;
   color: #fff;
 }
 
 .result-table th,
 .result-table td {
-  padding: 20px;
-  text-align: left;
+  padding: 9px;
+  text-align: center;
   border-bottom: 1px solid #555;
-}
-
-.ascending {
-  cursor: n-resize;
-}
-.descending {
-  cursor: s-resize;
 }
 
 .result-table th {
@@ -184,10 +152,10 @@
 }
 span {
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 
   background-color: #2253b5;
-  border: 3px solid #2253b5;
+  border: 1px solid #2253b5;
   border-radius: 20%;
 }
 
@@ -197,6 +165,6 @@ span {
   flex-wrap: wrap;
   justify-content: stretch;
   align-items: stretch;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
