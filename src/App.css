@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   background-color: rgb(200, 157, 101);
-  width: 80vw;
+  width: 100vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,10 +21,13 @@
 }
 
 .header {
-  width: 80vw;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .main {
-  width: 80vw;
+  width: 100vw;
 
   display: flex;
   flex-direction: row;
@@ -34,8 +37,8 @@
 }
 .main_firstselection,
 .main_lastselection {
-  width: 20%;
-  margin: 0px;
+  width: 40%;
+  margin: 4px;
   display: flex;
   flex-direction: column;
 }
@@ -43,7 +46,7 @@
 .main_lastselection input {
   border-radius: 5px;
   font-size: 9px;
-  padding: 2px;
+  padding: 3px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2px;
@@ -84,13 +87,16 @@
 }
 
 .footer {
-  width: 80vw;
+  width: 100vw;
+  margin-top: 13vh;
+
   background-color: #282c34;
   color: rgb(209, 198, 198);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .footer p {
@@ -116,14 +122,14 @@
 
 .result-table {
   margin-top: 20px;
-  width: 80vw;
+  width: 100vw;
   border-collapse: collapse;
   color: #fff;
 }
 
 .result-table th,
 .result-table td {
-  padding: 9px;
+  padding: 15px;
   text-align: center;
   border-bottom: 1px solid #555;
 }
